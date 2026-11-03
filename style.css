@@ -18,11 +18,9 @@ main {
 .barra {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   gap: 30px;
   padding: 18px 40px;
   background-color: #D6B78B;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
 }
 
 .logotipo {
@@ -74,9 +72,15 @@ main {
 }
 
 .banner img{
-  display: block;
   width: 100%;
   height: auto;
+}
+
+.titulo{
+  font-size: 38px;
+  color: #382D20;
+  text-align: center;
+  margin-bottom: 40px;
 }
 
 .contenido {
@@ -86,13 +90,19 @@ main {
 }
 
 .tarjeta {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+
   background: #ffffff;
   border-radius: 8px;
-  padding: 16px;
-  margin-bottom: 12px;
+  padding: 25px;
+  margin-bottom: 25px;
+
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  margin-right: 16px;
+
+  transition: transform 0.3s ease,
+              box-shadow 0.3s ease;
 }
 
 .tarjeta:hover {
@@ -100,9 +110,38 @@ main {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-.texto-dorado{
-  font-weight: strong;
+.info {
+  flex: 1;
+  padding: 0 15px;
+}
+
+
+.texto-dorado {
+  font-weight: bold;
   color: #D6B78B;
+}
+
+.imagen-historia {
+  flex: 0 0 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imagen-historia img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.imagen-historia img:hover {
+  transform: scale(1.05);
+}
+
+.ficha-invertida {
+  flex-direction: row-reverse;
 }
 
 .formulario {
@@ -117,8 +156,7 @@ textarea {
   padding: 12px;
   border: 2px solid #D6B78B;
   border-radius: 10px;
-  background-color: #fff7fb;
-  color: #444;
+  background-color: #ffffff;
   font-family: system-ui, sans-serif;
   font-size: 15px;
   box-sizing: border-box;
@@ -140,9 +178,10 @@ button {
 }
 
 button:hover {
-  background-color: #D6B78B;
+  background-color: #382D20;
+  color: white;
   transform: translateY(-3px);
-  box-shadow: 0 5px 12px #D6B78B;
+  box-shadow: 0 5px 12px rgba(56, 45, 32, 0.3);
 }
 
 input:focus,
@@ -150,6 +189,12 @@ textarea:focus {
   border-color: #D6B78B;
   background-color: #ffffff;
   box-shadow: 0 0 8px #D6B78B;
+}
+
+.contacto{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px;
 }
 
 footer {

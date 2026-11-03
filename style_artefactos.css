@@ -1,0 +1,174 @@
+html,
+body {
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, sans-serif;
+  background: #f4f6f6;
+}
+
+main {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+}
+
+.barra {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 18px 40px;
+  background-color: #D6B78B;
+}
+
+.logotipo {
+  color: #382D20;
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: opacity 0.3s ease;
+}
+
+.logotipo:hover {
+  opacity: 0.7;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.menu a {
+  color: #382D20;
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.menu a:hover {
+  color: #FFFFFF;
+}
+
+.menu a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 2px;
+  background-color: #FFFFFF;
+  transition: width 0.3s ease;
+}
+
+.menu a:hover::after {
+  width: 100%;
+}
+
+.banner img{
+  width: 100%;
+  height: auto;
+}
+
+.pagina-artefactos {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 35px 25px 60px;
+  color: #382D20;
+}
+
+.encabezado-artefactos {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.encabezado-artefactos h1 {
+  font-size: 38px;
+  margin-bottom: 10px;
+}
+
+.galeria-general {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.galeria-artefactos {
+  display: contents;
+}
+
+.tarjeta-artefacto {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  background-color: #EAE0D0;
+  border: 1px solid #DCCDB6;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.tarjeta-artefacto img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 12px;
+  box-sizing: border-box;
+  transition: transform 0.3s ease;
+}
+
+.tarjeta-artefacto:hover img {
+  transform: scale(1.08);
+}
+
+.tarjeta-artefacto h2 {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 12px;
+  box-sizing: border-box;
+  background-color: rgba(56, 45, 32, 0.82);
+  color: #FFFFFF;
+  font-size: 15px;
+  text-align: center;
+  line-height: 1.4;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.tarjeta-artefacto:hover h2 {
+  opacity: 1;
+}
+
+footer {
+  background-color: #D6B78B;
+  padding: 30px 20px;
+  margin-top: 20px;
+}
+
+.navegacion-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.navegacion-footer a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.navegacion-footer a:hover {
+  color: #6B4F2A;
+}
